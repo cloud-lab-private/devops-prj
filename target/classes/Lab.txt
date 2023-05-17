@@ -1,0 +1,22 @@
+# Docker is a tool that allows us to easily create & share isolated environments on our computers. We can create an
+# 'image' of the environment (which we can think of as a blueprint) and a 'container', which is the environment itself,
+# containing, for instance, a working Linux OS containing any other program we define, such as Java, Node, etc.
+# We could access that container through a terminal, or over the internet.
+# Ultimately, Docker will allow us to build specialized images that are made to run our server, run an instance
+# of a database, or simply testing our code in an environment which will match the one we will deploy our applications
+# to.
+# Let's start with pulling an image from the Dockerhub, which is a service that hosts docker images we could download.
+# Later on, we'll be using commands that allow us to start up containers based off these images.
+# For instance, if we wanted to pull the `ubuntu` image, we would use the command `docker pull ubuntu`, which will
+# by default pull the latest `ubuntu` image. Let's first have you pull the docker image `alpine` below, which is just a
+# different version of Linux.
+# ENTER YOUR COMMAND ON THE LINE BELOW, WITHOUT A HASH SYMBOL OR BLANK LINES
+docker pull alpine
+# Now that we have an `alpine` image, let's run that image as a container. In the `ubuntu` example, we would use the
+# command `docker run ubuntu` to start up a container. Let's next start the `alpine` container from the image you
+# pulled.
+# ENTER YOUR COMMAND BELOW, WITHOUT A HASH SYMBOL OR BLANK LINES
+docker run alpine
+# When running a container, we can also perform quite a bit of configuration - such as the name of the container,
+# opening ports for networking, setting environment variables, or designating volumes (external storage for the
+# docker container). We'll not worry about that for now.
